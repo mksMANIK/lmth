@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterate For loop</title>
+</head>
+<body>
+
+    <form action="">
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+    </form>
+
+
+    <div>
+        <h2 id="demo"></h2>
+        <script>
+            
+            var nm1=document.getElementById("num1");
+            var nm2=document.getElementById("num2");
+
+            let a=parseInt(nm1);
+            let b=parseInt(nm2);
+
+            for (var i=a; i<=b; i++){
+                if(i==0){
+                    document.write(i+ "is Even");
+                    document.write("<br>");
+                }
+                if(i%2==0){
+                    document.write(i+" is Even")
+                    document.write("<br>")
+                }
+                if(i%2!=0){
+                    document.write(i+ " is Odd");
+                    document.write("<br>");
+                }
+            }
+            document.getElementById("demo").innerHTML="For loop From " + n1+ "to"+ n2+ "Number";
+        </script>
+    </div>
+    
+</body>
+</html>
